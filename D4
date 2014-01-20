@@ -1,0 +1,26 @@
+import java.util.GregorianCalendar;
+import java.util.Date;
+
+public class D4{
+	public static void main(String arg[]){
+		GregorianCalendar c = new GregorianCalendar(2014,05,13);
+      Date d  = c.getTime();
+      System.out.println(isFridayThirteen(d));
+    		
+	}// end main
+
+	public static boolean isFridayThirteen(Date d){
+	   
+      int day = d.getDay();
+      int date = d.getDate();
+      //System.out.println(date);
+
+         if (day == 5 && date == 13){
+         return true;
+         }// end if
+
+      return false;
+
+	}//end isFridayThirteen
+
+}//end D3
