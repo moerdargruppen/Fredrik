@@ -1,0 +1,24 @@
+import java.util.GregorianCalendar;
+
+public class D3{
+	public static void main(String arg[]){
+		
+      System.out.println(skott("2012"));	
+		
+	}// end main
+
+	public static int skott(String y){
+	  
+      GregorianCalendar c1 = new GregorianCalendar();
+      int year = Integer.parseInt(y);
+
+      boolean yearToF  = c1.isLeapYear(year);
+       
+      if (yearToF == true){
+         return 366;
+      }
+      return 365;	
+
+	}//end skott
+
+}//end D3
